@@ -19,7 +19,7 @@ echo "Step 1 - Creating AKS cluster $clusterName"
 az aks create \
 --resource-group $resourceGroup \
 --name $clusterName \
---location eastus \
+--location centralus \
 --node-count 1 \
 --enable-addons monitoring \
 --generate-ssh-keys
@@ -28,7 +28,7 @@ az aks create \
 az aks create \
 --resource-group $resourceGroup \
 --name $clusterName \
---location eastus \
+--location centralus \
 --node-count 1 \
 --generate-ssh-keys
 
